@@ -1,3 +1,21 @@
+# Faster-LIO
+
+## Prerequisites
+
+```shell
+cd thirdparty
+tar -xvf tbb2018_20170726oss_lin.tgz
+```
+
+## Compile
+
+```shell
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DCUSTOM_TBB_DIR=`pwd`/../thirdparty/tbb2018_20170726oss -DWITH_IVOX_NODE_TYPE_PHC=ON
+make -j
+```
+
 ## FasterLIO
 
 This is the code repository of FasterLIO by Chunge Bai, Tao Xiang, Yajie Chen, Haoqian Wang, Fang Zhang and Xiang Gao.
